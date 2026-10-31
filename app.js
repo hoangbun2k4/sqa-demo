@@ -1,7 +1,7 @@
 const express = require('express');
 const app = express();
 const db = require('./db');
-//test
+
 app.get('/getUser', async (req, res) => {
     const userId = req.query.id; 
     const query = "SELECT * FROM users WHERE id = " + userId; 
